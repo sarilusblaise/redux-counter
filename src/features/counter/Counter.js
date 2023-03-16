@@ -13,11 +13,13 @@ export function Counter() {
 						+
 					</button>
 				</div>
-				<div className={styles.row}>
-					<input className={styles.textbox} aria-label='Set increment amount' />
-					<button className={styles.button}>Add Amount</button>
-					<button className={styles.asyncButton}>Add Async</button>
-					<button className={styles.button}>Add If Odd</button>
+				<input className={styles.textbox} aria-label='Set increment amount' />
+				<div>
+					<div className={styles.row}>
+						<button className={styles.button}>Add Amount</button>
+						<button className={styles.asyncButton}>Add Async</button>
+						<button className={styles.button}>Add If Odd</button>
+					</div>
 				</div>
 			</div>
 		</main>
