@@ -1,1 +1,3 @@
-export default function counterReducer() {}
+export default function counterReducer() {
+	return null;
+}
