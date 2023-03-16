@@ -1,7 +1,30 @@
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+}
+.container{
+background:#2563eb;
+width: 80%;
+height: 20rem;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+@media screen and (min-width:800px){
+  
+  .container{
+    width: 50%;
+  }
+}
 .row {
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 100%;
 }
 
 .row > button {
@@ -13,7 +36,7 @@
 }
 
 .value {
-  font-size: 78px;
+  font-size: 3rem;
   padding-left: 16px;
   padding-right: 16px;
   margin-top: 2px;
@@ -23,21 +46,23 @@
 .button {
   appearance: none;
   background: none;
-  font-size: 32px;
   padding-left: 12px;
   padding-right: 12px;
+  font-size: 1rem;
+  max-width: 5rem;
   outline: none;
   border: 2px solid transparent;
-  color: rgb(112, 76, 182);
+  color: white;
+  font-weight: bold;
   padding-bottom: 4px;
   cursor: pointer;
-  background-color: rgba(112, 76, 182, 0.1);
+  background-color: rgb(30, 58, 138,0.4);
   border-radius: 2px;
   transition: all 0.15s;
 }
 
 .textbox {
-  font-size: 32px;
+  font-size: 2rem;
   padding: 2px;
   width: 64px;
   text-align: center;
@@ -46,7 +71,7 @@
 
 .button:hover,
 .button:focus {
-  border: 2px solid rgba(112, 76, 182, 0.4);
+  border: 2px solid rgb(30, 58, 138, 0.4);
 }
 
 .button:active {
