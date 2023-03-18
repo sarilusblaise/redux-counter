@@ -15,7 +15,7 @@ export const counterSlice = createSlice({
 		decrement: (state) => {
 			state.value += -1;
 		},
-		addAmount: (state, action) => {
+		incrementByAmount: (state, action) => {
 			state.value += action.payload;
 		},
 	},
@@ -23,11 +23,13 @@ export const counterSlice = createSlice({
 
 console.log(counterSlice.actions.increment());
 console.log(counterSlice.actions.decrement());
-console.log(counterSlice.actions.addAmount());
+console.log(counterSlice.actions.incrementByAmount());
 const newState = counterSlice.reducer(
 	{ value: 15 },
 	counterSlice.actions.decrement()
 );
 console.log(newState);
-export const { increment, decrement, addAmount } = counterSlice.actions;
+
+// Action creators are generated for each case reducer function
+export const { increment, decrement, incrementByAmount } = counterSlice.actions;
 export default counterSlice.reducer;
