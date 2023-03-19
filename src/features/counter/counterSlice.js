@@ -23,7 +23,7 @@ export const counterSlice = createSlice({
 
 console.log(counterSlice.actions.increment());
 console.log(counterSlice.actions.decrement());
-console.log(counterSlice.actions.incrementByAmount());
+console.log(counterSlice.actions.incrementByAmount(8));
 const newState = counterSlice.reducer(
 	{ value: 15 },
 	counterSlice.actions.decrement()
