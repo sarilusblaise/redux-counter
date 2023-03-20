@@ -44,7 +44,15 @@ export function Counter() {
 							Add Amount
 						</button>
 						<button className={styles.asyncButton}>Add Async</button>
-						<button className={styles.button}>Add If Odd</button>
+						<button
+							className={styles.button}
+							onClick={() => {
+								if (Number(incrementAmount) % 2 === 0)
+									dispatch(incrementByAmount(Number(incrementAmount)));
+							}}
+						>
+							Add If Odd
+						</button>
 					</div>
 				</div>
 			</div>
