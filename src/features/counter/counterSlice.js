@@ -19,7 +19,7 @@ export const counterSlice = createSlice({
 			state.value += action.payload;
 		},
 		incrementIfOdd: (state, action) => {
-			if (action.payload % 2 === 0) {
+			if (state.value % 2 === 1) {
 				state.value += action.payload;
 			} else {
 				return state;
